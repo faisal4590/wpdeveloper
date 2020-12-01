@@ -13,6 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+Route::post("search_user","GithubBOTController@search_user");
+Route::post("get_user_repo_from_db","GithubBOTController@get_user_repo_from_db");

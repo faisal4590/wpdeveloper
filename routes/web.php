@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/github_bot', function () {
+    return view('github_bot');
+});
